@@ -37,8 +37,9 @@ class CommandsControllerTest extends PHPUnit_Framework_TestCase
         $json = json_decode($response->getContent());
 
         $substrings = explode("\n", $json);
-        foreach ($substrings as $piece) {
-            $this->assertEquals(165, strlen($piece));
-        }
+
+        $this->assertEquals(12540, strlen($substrings[0]));
+
     }
+
 }
