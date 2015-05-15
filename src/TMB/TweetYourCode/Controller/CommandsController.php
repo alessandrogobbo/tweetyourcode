@@ -33,8 +33,8 @@ class CommandsController
     {
         return [
             [
-                "command" => "hot",
-                "description" => "Show TheMadBox logo (tripleX)"
+                "command" => "logo",
+                "description" => "Show TheMadBox logo"
             ]
         ];
     }
