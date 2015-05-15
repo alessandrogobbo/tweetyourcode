@@ -1,0 +1,9 @@
+commands:
+    path:  /commands
+    defaults: { _controller: 'TMB\TweetYourCode\Controller\CommandsController::commandsAction'}
+    methods: [GET]
+
+draw:
+    path:  /draw/{command}
+    defaults: { _controller: 'TMB\TweetYourCode\Controller\CommandsController::drawAction'}
+    methods: [POST]
