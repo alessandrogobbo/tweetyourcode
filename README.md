@@ -24,7 +24,7 @@ Response:
 
 ```
     An ASCII string with exactly 12.540 (165x76) characters
-    Don't warry about the `\n` characters, we add them for you!
+    Don't worry about the `\n` characters, we add them for you!
 ```
 Both the APIs must return a Json Response.
 

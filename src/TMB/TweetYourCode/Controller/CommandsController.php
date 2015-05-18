@@ -8,12 +8,12 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CommandsController
 {
-	public function commandsAction() 
+	public function commandsAction()
 	{
         return new JsonResponse($this->getManagedCommands());
 	}
-	
-	public function drawAction(Request $request, $command)
+
+	public function drawAction($command)
 	{
 
         foreach ($this->getManagedCommands() as $managedCommands) {
