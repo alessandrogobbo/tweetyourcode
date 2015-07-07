@@ -12,3 +12,13 @@ default:
     path:  /
     defaults: { _controller: 'TMB\TweetYourCode\Controller\DefaultController::defaultAction'}
     methods: [GET]
+
+default_appfrontflow:
+    path:  /
+    defaults: { _controller: 'TMB\TweetYourCode\Controller\DefaultController::getAppfrontFlowAction'}
+    methods: [GET]
+    
+default_myip:
+    path:  /
+    defaults: { _controller: 'TMB\TweetYourCode\Controller\DefaultController::getMyIpAction'}
+    methods: [GET]
