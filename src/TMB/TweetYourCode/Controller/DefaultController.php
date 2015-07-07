@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController
 {
 	public function defaultAction() {
-		return $this->appFrontFlowAction();
+		return $this->getAppfrontFlowAction();
 	}
 	
 	public function getMyIpAction() {
