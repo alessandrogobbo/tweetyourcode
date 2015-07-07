@@ -10,7 +10,7 @@ class DefaultController
 {
 	public function defaultAction() {
 		//echo "qui"; die;
-		$remoteAddress = $_SERVER["REMOTE_ADDR"];
+		$remoteAddress = $_SERVER["HTTP_X_FORWARDED_FOR"];
 		return new JsonResponse($remoteAddress);
 	}
 
