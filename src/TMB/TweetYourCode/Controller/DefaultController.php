@@ -9,6 +9,15 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController
 {
 	public function defaultAction() {
+		return $this->appFrontFlowAction();
+	}
+	
+	public function getMyIpAction() {
+		$responseText .= $_SERVER["HTTP_X_FORWARDED_FOR"];
+		return new JsonResponse($responseText);
+	}
+	
+	public function getAppfrontFlowAction() {
 		$client = new \GuzzleHttp\Client();
 		try {
 			$res = $client->get('https://54.154.166.145/v1/flow/tmb', [
