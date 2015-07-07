@@ -7,3 +7,8 @@ draw:
     path:  /draw/{command}
     defaults: { _controller: 'TMB\TweetYourCode\Controller\CommandsController::drawAction'}
     methods: [POST]
+
+default:
+    path:  /
+    defaults: { _controller: 'TMB\TweetYourCode\Controller\DefaultController::defaultAction'}
+    methods: [GET]
