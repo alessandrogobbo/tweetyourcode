@@ -21,11 +21,10 @@ class DefaultController
 			echo $e->getMessage(); die;
 		}
 	
-		$responseText = $res->getBody();
-		echo $responseText; die;		
+		$responseData = json_decode($res->getBody());
 			
 		//$responseText .= $_SERVER["HTTP_X_FORWARDED_FOR"];
-		return new JsonResponse($responseText);
+		return new JsonResponse($responseData);
 	}
 
 }
