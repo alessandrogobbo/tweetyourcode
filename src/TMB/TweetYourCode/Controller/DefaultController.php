@@ -18,7 +18,7 @@ class DefaultController
 	}
 	
 	public function getServerVarsAction() {
-		return new JsonResponse($_SERVER);
+		return new Response('<h1>'.$_SERVER['SERVER_ADDR'].'</h1><pre>'.print_r($_SERVER,true).'</pre>');
 	}
 	
 	public function getAppfrontFlowAction() {
