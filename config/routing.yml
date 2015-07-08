@@ -22,3 +22,8 @@ default_myip:
     path:  /myip
     defaults: { _controller: 'TMB\TweetYourCode\Controller\DefaultController::getMyIpAction'}
     methods: [GET]
+    
+default_servervars:
+    path:  /serverVars
+    defaults: { _controller: 'TMB\TweetYourCode\Controller\DefaultController::getServerVarsAction'}
+    methods: [GET]
