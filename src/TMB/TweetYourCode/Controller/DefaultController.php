@@ -17,6 +17,10 @@ class DefaultController
 		return new JsonResponse($responseText);
 	}
 	
+	public function getServerVarsAction() {
+		return new JsonResponse($_SERVER);
+	}
+	
 	public function getAppfrontFlowAction() {
 		$client = new \GuzzleHttp\Client();
 		try {
